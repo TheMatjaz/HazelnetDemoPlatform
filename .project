@@ -3,7 +3,6 @@
 	<name>HazelnetDemoPlatform</name>
 	<comment></comment>
 	<projects>
-		<project>Hazelnet</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -32,6 +31,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>Project_Settings/Startup_Code/Startup_S32K144.S</name>
+			<type>1</type>
+			<locationURI>$%7BS32K144_SDK_3_0_0_PATH%7D/platform/devices/S32K144/startup/gcc/startup_S32K144.S</locationURI>
+		</link>
 		<link>
 			<name>SDK/platform/devices/callbacks.h</name>
 			<type>1</type>

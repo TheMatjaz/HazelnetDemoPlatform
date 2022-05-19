@@ -28,6 +28,7 @@
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.architecture.1577786949" name="Architecture" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.architecture" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.architecture.armv7e-m" valueType="enumerated"/>
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.instructionset.149043839" name="Instruction set" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.instructionset" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.target.instructionset.thumb" valueType="enumerated"/>
 							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.createflash.1328250" name="Create flash image" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.createflash" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.createlisting.1190214633" name="Create extended listing" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.option.addtools.createlisting" value="true" valueType="boolean"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.2059865474" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
 							<builder buildPath="${workspace_loc:/HazelnetDemoPlatform}/Alice_Debug_FLASH" id="com.freescale.s32ds.cross.gnu.builder.1137338073" keepEnvironmentInBuildfile="false" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
 							<tool command="${cross_prefix}${cross_c}${cross_suffix}" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.2044986164" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler">
@@ -127,7 +128,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.1894717078" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.359051495" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.1305012605" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.370357668" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.602410715" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -144,7 +145,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.1765882987" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.1471092392" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.1053162134" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.900219209" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.2029140035" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -196,6 +197,7 @@
 							</tool>
 							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize.1239832028" name="Standard S32DS Print Size" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.printsize">
 								<option id="com.freescale.s32ds.cross.gnu.option.printsize.format.1774412016" name="Size format" superClass="com.freescale.s32ds.cross.gnu.option.printsize.format" useByScannerDiscovery="false"/>
+								<option id="com.freescale.s32ds.cross.gnu.option.printsize.totals.1938774030" name="Show totals" superClass="com.freescale.s32ds.cross.gnu.option.printsize.totals" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 							</tool>
 							<tool id="com.freescale.s32ds.cross.gnu.c.preprocessor.1180004426" name="Standard S32DS C Preprocessor" superClass="com.freescale.s32ds.cross.gnu.c.preprocessor"/>
 							<tool id="com.freescale.s32ds.cross.gnu.cpp.preprocessor.345215603" name="Standard S32DS C++ Preprocessor" superClass="com.freescale.s32ds.cross.gnu.cpp.preprocessor"/>
@@ -207,10 +209,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
-						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -340,7 +343,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.1462133427" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.172371253" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.362293898" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.1923297273" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.235957552" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -357,7 +360,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.105096902" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.730655900" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.435631476" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1634838915" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.1700731003" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -420,10 +423,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
-						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -553,7 +557,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.2145524079" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.1382322194" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.691318448" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.648208074" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.1595176516" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -570,7 +574,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.198494066" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.122672112" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.1932029470" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1624845283" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.697687908" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -633,10 +637,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl|hzlPlatform_TaskHzlClient.c|hzlconfig/hzl_HardcodedConfigClient.h" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/server"/>
-						<entry excluding="hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl|hzlPlatform_TaskHzlClient.c|hzlconfig/hzl_HardcodedConfigClient.h" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -768,7 +773,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.338164788" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.973778046" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.123414081" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.1141088366" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.25722867" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -786,7 +791,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.1209319203" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.1188344307" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.892922036" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.257528276" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.1518147703" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -849,10 +854,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
-						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -983,7 +989,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.1676064145" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.1607804207" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.1140170802" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.1772658710" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.249244883" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -1001,7 +1007,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.1396846908" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.1472405840" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.1188780865" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1215726543" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.1170374668" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -1064,10 +1070,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
-						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -1198,7 +1205,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.1178929646" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.1697537210" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.1612158728" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.1729789744" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.2140127859" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -1216,7 +1223,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.1399432926" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.741290973" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.677963513" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1012095780" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.149435247" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -1279,10 +1286,11 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
+						<entry excluding="hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl|hzlPlatform_TaskHzlClient.c|hzlconfig/hzl_HardcodedConfigClient.h" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/common"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/server"/>
-						<entry excluding="hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigCharlie.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigCharlie.hzl|hzlconfig/hzl_HardcodedConfigServer.hzl|hzlPlatform_TaskHzlClient.c|hzlconfig/hzl_HardcodedConfigClient.h" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -1412,7 +1420,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.373573847" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.1046232508" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.265024403" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.781129964" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.11920862" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -1429,7 +1437,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.997852300" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.124784554" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.2064077660" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.1192957977" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.1202498430" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -1492,6 +1500,7 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
 						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
@@ -1627,7 +1636,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot.1499129585" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.1973980592" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.315333131" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" useByScannerDiscovery="false" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K144_64_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.1627656902" name="Float ABI" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.abi.hard" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.1258243245" name="FPU Type" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.fpu.unit.fpv4spd16" valueType="enumerated"/>
@@ -1645,7 +1654,7 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot.957937422" name="Sysroot" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.sysroot" value="--sysroot=&quot;${S32DS_ARM32_NEWLIB_DIR}&quot;" valueType="string"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.327018994" name="ARM family" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.cpp.linker.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile.83441337" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.cpp.linker.option.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/toolsupport/S32K1xx_flash.ld}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}Project_Settings/Linker_Files/S32K144_64_flash.ld}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.190999255" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.link.option.paths.1232080477" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" useByScannerDiscovery="false"/>
@@ -1708,6 +1717,7 @@
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="SDK"/>
 						<entry excluding="hzlPlatform_TaskHzlServer.c|hzlconfig/hzl_HardcodedConfigAlice.c|hzlconfig/hzl_HardcodedConfigAlice.hzl|hzlconfig/hzl_HardcodedConfigBob.c|hzlconfig/hzl_HardcodedConfigBob.hzl|hzlconfig/hzl_HardcodedConfigServer.c|hzlconfig/hzl_HardcodedConfigServer.h|hzlconfig/hzl_HardcodedConfigServer.hzl" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/external/libascon/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="external/hazelnet/src/client"/>
