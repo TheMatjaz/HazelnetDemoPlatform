@@ -31,7 +31,7 @@
  * Implementation of the RBG LED for S32K144.
  */
 
-#include <hzlPlatform_RgbLed.h>
+#include "hzlPlatform_RgbLed.h"
 #include "pins_driver.h"
 
 #define RGB_LED_GPIO PTD

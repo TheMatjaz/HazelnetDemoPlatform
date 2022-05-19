@@ -59,10 +59,10 @@ extern "C"
 #include "pin_mux.h"
 
 // Application headers
-#include <hzlPlatform_RgbLed.h>
+#include "hzlPlatform_RgbLed.h"
 #include "hzl.h"
 
-#define HZL_PLATFORM_VERSION "v1.0.1"
+#define HZL_PLATFORM_VERSION "v1.1.0"
 
 // Macro in the main.c used to alias the actual RTOS main function written by the user.
 #define PEX_RTOS_START hzlPlatform_InitFreeRtos
