@@ -137,6 +137,7 @@ hzlPlatform_AppProcessReceivedSecWarn(const hzl_Err_t hzlErrCode)
         hzlPlatform_AppLog("INFO: too many secwarnings");
         gSuccessiveSecurityWarningsCounter = 0U;
         hzlPlatform_AppClientOnlyNewHandshake();
+        hzlPlatform_AppServerOnlyForceSessionRenewal();
     }
 }
 
