@@ -78,6 +78,9 @@ To make the devices communicate securely:
 - CAN bus wiring between the boards.
 - 12 V power supply for all the boards. See the note below.
 
+Details on **how to connect the boards** are available in the diagrams in the
+[Documentation folder](Documentation/hazelnet_demo_platform_hardware.pdf).
+
 To actually see what is going on on the bus, a sniffer is required, such as the
 [PEAK System PCAN-USB FD](https://www.peak-system.com/PCAN-USB-FD.365.0.html).
 Any CAN transceiver that can forward the sniffed messages to a desktop/laptop
@@ -191,6 +194,8 @@ Running the demo
    wheel) to force a resynchronisation of the Session Information: a Client
    sends a new Request, the Server a Session Renewal Notification message.
 
+Details on **which button is where** are available in the pictures in the
+[Documentation folder](Documentation/hazelnet_demo_platform_hardware.pdf).
 
 ### Meanings of the RGB LED colors
 
