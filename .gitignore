@@ -1,0 +1,15 @@
+Generated_Code/
+.settings/
+docs/
+doc/
+Documentation/HazelnetDemoPlatform.txt
+Documentation/HazelnetDemoPlatform_Settings.xml
+__pycache__/
+Debug_*/
+Release_*/
+build*/
+*.g_c
+*.g_x
+*.zip
+*.hzl
+SDK/
