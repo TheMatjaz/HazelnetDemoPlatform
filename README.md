@@ -1,9 +1,11 @@
 Hazelnet demo platform
 ==============================================================================
 
-This platform showcases the Hazelnet library implementing the CAN Bus
-Security (CBS) protocol with a set of S32K144 boards that communicate with each
-other over the CAN FD bus using encrypted and authenticated messages.
+This platform showcases the
+[Hazelnet library](https://github.com/TheMatjaz/Hazelnet) in action, where a
+set of NXP S32K144 microcontrollers exchange encrypted and authenticated
+messages over the CAN FD bus accoring to the
+[CAN Bus Security (CBS) protocol](https://matjaz.it/cbs/).
 
 This demo is **not meant for reproducibility**, as it's hard to install all
 required tools (some are bound by licenses) and to set up the project.

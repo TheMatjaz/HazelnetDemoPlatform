@@ -62,7 +62,7 @@ extern "C"
 #include "hzlPlatform_RgbLed.h"
 #include "hzl.h"
 
-#define HZL_PLATFORM_VERSION "v1.1.0"
+#define HZL_PLATFORM_VERSION "v1.1.1"
 
 // Macro in the main.c used to alias the actual RTOS main function written by the user.
 #define PEX_RTOS_START hzlPlatform_InitFreeRtos
